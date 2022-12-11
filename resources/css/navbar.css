@@ -42,6 +42,7 @@ a {
 .header-container .navbar ul li a:hover {
     color: #2c2c2c;
     background-color: #76b5c5;
+    transition: 0.3s all ease-in-out;
 }
 /* For Mobile Devices */
 .header-container .navbar .responsive-nav {
