@@ -1,13 +1,3 @@
-* {
-    font-family: 'Roboto';
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    background-color: #E0e0e0;
-}
-
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -30,6 +20,16 @@ body{
     font-feature-settings: 'liga';
 }
 
-a{
-    text-decoration: none;
+* {
+    --text-aqua-green: #1cb698;
+    --text-white: #fff;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Semi Condensed';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* TO SLIDE WHEN I CLICK ON THE MENU LINKS */
+    scroll-behavior: smooth;
 }

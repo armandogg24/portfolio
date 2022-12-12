@@ -4,37 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--TITLE-->
-    <title>Armando Gonzalez</title>
-    <!--FONTS-->
+    <!-- TITLE -->
+    <title>Armando Gonzalez's Portfolio</title>
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!--ICONS-->
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;300;400;600;800&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
-    <!--STYLES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- STYLES -->
     <link rel="stylesheet" href="resources/css/general.css">
     <link rel="stylesheet" href="resources/css/navbar.css">
+    <link rel="stylesheet" href="resources/css/start.css">
 </head>
 <body>
-    <header class="header-container">
-        <nav class="navbar">
+    <!-- HEADER -->
+    <section class="header-container">
+        <header>
             <div class="logo">
                 <a href="#">Armando</a>
             </div>
-            <ul>
-                <li><a href="public/about.html">About</a></li>
-                <li><a href="public/work.html">Work</a></li>
-                <li><a href="public/contact.html">Contact</a></li>
-            </ul>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#start">START</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
             <div class="responsive-nav">
                 <span class="material-icons">menu</span>
             </div>
-        </nav>
-    </header>
-    <section>
-        <h1>Armando</h1>
+        </header>
+    </section>
+    <!-- START -->
+    <section id="start" class="start">
+        <div class="banner-content">
+            <div class="img-container">
+                <img src="resources/img/profile.png" alt="">
+            </div>
+            <h1>ARMANDO GONZALEZ</h1>
+            <h2>Junior Software Developer</h2>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About</h2>
+            <p><span>Hi, I'm Armando Gonzalez.</span> I am a young developer still in training who wants to improve himself and learn more and more about new technologies If you are interested in my work click here And if you want to contact me click here.</p>
+
+            <div class="row">
+                <!-- PERSONAL DATA -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            24-07-2002
+                        </li>
+                        <li>
+                            <strong>Birthday</strong>
+                            24-07-2002
+                        </li>
+                        <li>
+                            <strong>Birthday</strong>
+                            24-07-2002
+                        </li>
+                    </ul>
+                </div>
+                <!-- INTERESTS -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="interests-container">
+                        <div class="interests">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOGAMES</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-film"></i>
+                            <span>MOVIES</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-car"></i>
+                            <span>CARS</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-cat"></i>
+                            <span>ANIMALS</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-book"></i>
+                            <span>READ</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                            <span>ITALIAN FOOD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Download CV
+                <i class="fa-solid fa-download"></i>
+            </button>
+            <button>
+                View CV
+                <i class="fa-solid fa-eye"></i>
+            </button>
+        </div>
     </section>
 </body>
 </html>
