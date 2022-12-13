@@ -1,0 +1,127 @@
+/* ABOUT */
+.about {
+    background-color: #1e2326;
+    color: var(--text-white);
+    padding: 50px 20px;
+}
+
+.about h2 {
+    font-size: 48px;
+    font-family: 'Oswald';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about .about-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about .about-content p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.about .about-content p span {
+    color: var(--text-aqua-green);
+    font-weight: bold;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .col {
+    width: 50%;
+}
+
+.about .row .col h3 {
+    font-size: 28px;
+    font-family: 'Oswald';
+    margin-bottom: 25px;
+}
+
+.about .row .col ul {
+    list-style: none;
+}
+
+.about .row .col ul li {
+    margin: 12px 0;
+}
+
+.about .row .col ul li strong {
+    display: inline-block;
+    color: var(--text-aqua-green);
+    width: 130px;
+}
+
+.about .row .col ul li span {
+    background-color: var(--text-aqua-green);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.about .row .col .interests-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about .row .col .interests-container .interests {
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-in-out;
+}
+
+.about .row .col .interests-container .interests:hover {
+    background-color: var(--text-aqua-green);
+}
+
+.about .row .col .interests-container .interests i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--text-white);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--text-white);
+    position: relative;
+    z-index: 10;
+}
+
+.about button a {
+    text-decoration: none;
+    outline: none;
+    color: var(--text-white);
+}
+
+.about button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--text-aqua-green);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+.about button:hover .overlay {
+    width: 100%;
+}

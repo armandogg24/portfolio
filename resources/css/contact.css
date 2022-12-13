@@ -1,0 +1,100 @@
+/* CONTACT */
+
+.contact {
+    background-image: url(../img/worldmap.png);
+    background-color: #1e2326;
+    color: var(--text-white);
+    padding: 50px 0;
+}
+
+.contact .contact-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 48px;
+    font-family: 'Oswald';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+}
+
+.contact .contact-content .row .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contact .contact-content .row .col input,
+.contact .contact-content .row .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: var(--text-white);
+    font-size: 18px;
+}
+
+.contact .contact-content .row .col button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--text-white);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--text-white);
+    position: relative;
+    z-index: 10;
+}
+
+.contact .contact-content .row .col button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--text-aqua-green);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+.contact .contact-content .row .col button:hover .overlay {
+    width: 100%;
+}
+
+.contact .contact-content .row .col img {
+    width: 100%;
+}
+
+.contact .contact-content .row .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252a2e;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .contact-content .row .col .info ul {
+    list-style: none;
+}
+
+.contact .contact-content .row .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .row .col .info ul li i {
+    color: var(--text-aqua-green);
+    display: inline-block;
+    margin-right: 20px;
+
+}

@@ -10,8 +10,10 @@
 }
 
 .pst {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
     cursor: pointer;
+    font-size: 24px;
+    color: #424242;
 }

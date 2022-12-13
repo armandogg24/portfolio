@@ -13,11 +13,18 @@
     <!-- ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
     <!-- STYLES -->
+    <link rel="stylesheet" href="resources/css/showAndHide.css">
     <link rel="stylesheet" href="resources/css/general.css">
     <link rel="stylesheet" href="resources/css/navbar.css">
     <link rel="stylesheet" href="resources/css/start.css">
-    <link rel="stylesheet" href="resources/css/showAndHide.css">
+    <link rel="stylesheet" href="resources/css/about.css">
+    <link rel="stylesheet" href="resources/css/skills.css">
+    <link rel="stylesheet" href="resources/css/work.css">
+    <link rel="stylesheet" href="resources/css/contact.css">
+    <link rel="stylesheet" href="resources/css/footer.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
 </head>
 <body>
     <section class="before">
@@ -25,21 +32,22 @@
         <br><br><p class="before pst" onclick="showAndHide()">Psst Click here.</p>
     </section>
     <section class="after">
-     <!-- HEADER -->
-     <section class="header-container">
+    <!-- HEADER -->
+    <section class="header-container">
         <header>
             <div class="logo">
                 <a href="#">Armando</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#start">START</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#start" onclick="select()">START</a></li>
+                    <li><a href="#about" onclick="select()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#work" onclick="select()">WORK</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="responsive-nav">
+            <div class="responsive-nav" onclick="showAndHideMenu()">
                 <span class="material-icons">menu</span>
             </div>
         </header>
@@ -53,12 +61,12 @@
             <h1>ARMANDO GONZALEZ</h1>
             <h2>Junior Software Developer</h2>
             <div class="social">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-discord"></i></a>
-                <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                <a href="https://www.facebook.com/armandogg24"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/armandogg24"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/-armandogg24/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/armandogg24"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/armandogg24"><i class="fa-brands fa-github"></i></a>
+                <a href="https://t.me/armandogg_24"><i class="fa-solid fa-paper-plane"></i></a>
             </div>
         </div>
     </section>
@@ -78,12 +86,8 @@
                             24-07-2002
                         </li>
                         <li>
-                            <strong>Birthday</strong>
-                            24-07-2002
-                        </li>
-                        <li>
-                            <strong>Birthday</strong>
-                            24-07-2002
+                            <strong>Current Job</strong>
+                            <span>FREELANCE</span>
                         </li>
                     </ul>
                 </div>
@@ -127,16 +131,205 @@
                 </div>
             </div>
             <button>
-                Download CV
+                <a href="resources/docs/document.pdf" download="Armando-Gonzalez-Curriculum-Summary.pdf">
+                    Download CV
                 <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+                </a>
             </button>
-            <button>
-                View CV
-                <i class="fa-solid fa-eye"></i>
-            </button>
+            
         </div>
     </section>
-   </section>
+    <!-- SKILSS -->
+    <section id="skills" class="skills">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- TECHNICAL SKILLS -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node.Js</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- PROFESSIONAL SKILLS -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WORK -->
+    <section id="work" class="work">
+        <div class="work-content">
+            <h2>Work</h2>
+            <div class="gallery">
+                <div class="proyect">
+                    <img src="resources/img/Calculatorjs.png" alt="">
+                    <div class="overlay">
+                        <h3>Basic JavaScript Calculator</h3>
+                        <p>Basic functions and programming logic</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="resources/img/Calculatorjs.png" alt="">
+                    <div class="overlay">
+                        <h3>Basic JavaScript Calculator</h3>
+                        <p>Basic functions and programming logic</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="resources/img/Calculatorjs.png" alt="">
+                    <div class="overlay">
+                        <h3>Basic JavaScript Calculator</h3>
+                        <p>Basic functions and programming logic</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="resources/img/Calculatorjs.png" alt="">
+                    <div class="overlay">
+                        <h3>Basic JavaScript Calculator</h3>
+                        <p>Basic functions and programming logic</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="resources/img/Calculatorjs.png" alt="">
+                    <div class="overlay">
+                        <h3>Basic JavaScript Calculator</h3>
+                        <p>Basic functions and programming logic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contacto</h2>
+            <div class="row">
+                <!-- FORM -->
+                <div class="col">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>Send
+                        <span style="font-size: 18px;" class="material-icons">send</span>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- MAP -->
+                <div class="col">
+                    <img src="resources/img/map.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Maracaibo, Zulia, Venezuela
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: armando.contact@telegmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#start" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="social">
+            <a href="https://www.facebook.com/armandogg24"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/armandogg24"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/-armandogg24/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/armandogg24"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/armandogg24"><i class="fa-brands fa-github"></i></a>
+            <a href="https://t.me/armandogg_24"><i class="fa-solid fa-paper-plane"></i></a>
+        </div>
+    </footer>
+    </section>
 </body>
 <script src="resources/js/index.js"></script>
 </html>

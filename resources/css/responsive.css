@@ -1,0 +1,72 @@
+/* RESPONSIVE */
+
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .responsive-nav {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid var(--text-white);
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .about .row {
+        display: block;
+    }
+
+    .about .row .col {
+        width: fit-content;
+    }
+
+    .skills .row {
+        display: block;
+    }
+
+    .skills .row .col {
+        width: 100%;
+    }
+
+    .skills .row .col .skill-bar {
+        width: 100%;
+    }
+
+    .work .gallery {
+        display: block;
+        width: 100%;
+    }
+
+    .work .gallery .proyect {
+        max-width: 100%;
+    }
+
+    .work .gallery .proyect img {
+        width: 100%;
+    }
+
+    .contact .contact-content .row {
+        display: block;
+    }
+
+    .contact .contact-content .row .col {
+        width: 100%;
+    }
+}
