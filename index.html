@@ -290,17 +290,19 @@
     <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="contact-content">
-            <h2>Contacto</h2>
+            <h2>Contact</h2>
             <div class="row">
                 <!-- FORM -->
                 <div class="col">
-                    <input type="text" placeholder="Your Name">
-                    <input type="text" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button>Send
-                        <span style="font-size: 18px;" class="material-icons">send</span>
-                        <span class="overlay"></span>
-                    </button>
+                    <form action="javascript:processForm();" id="contact-form" method="post" enctype="text/plain">
+                        <input type="text" placeholder="Your Name" id="name-contact">
+                        <input type="text" placeholder="Email" id="email-contact">
+                        <textarea name="" id="message-contact" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" onsubmit="saveMessage(); return false">Send
+                            <span style="font-size: 18px;" class="material-icons">send</span>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- MAP -->
                 <div class="col">

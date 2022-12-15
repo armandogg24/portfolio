@@ -5,6 +5,11 @@ const nav = document.getElementById("nav");
 const skills = document.getElementById("skills");
 const skillDistance = window.innerHeight - skills.getBoundingClientRect().top;
 const progress = document.getElementsByClassName("progress");
+const form = document.getElementById("contact-form")
+const nameContact = document.getElementById("name-contact");
+const emailContact = document.getElementById("email-contact");
+const messageContact = document.getElementById("message-contact");
+
 
 function showAndHide() {
     if(before.style.display==""||before.style.display=="none"){
@@ -46,3 +51,16 @@ function skillsEffect() {
 }
 
 window.onscroll = skillsEffect();
+
+
+function processForm(e) {
+    if (e.preventDefault) e.preventDefault();
+    console.log(`${emailContact.value}${nameContact.value}${messageContact.value}`);
+    return false;
+}
+
+if (form.attachEvent) {
+    form.attachEvent("submit", processForm);
+} else {
+    form.addEventListener("submit", processForm);
+}
