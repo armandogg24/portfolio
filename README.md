@@ -1,14 +1,6 @@
 # PORTFOLIO
 This is my portfolio website, I made it using HTML, CSS and JavaScript, I still need to connect it to a database to collect the data from the message form.
 <hr>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<style>
-    .buttons {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-</style>
 <h1>INDEX</h1>
 <ul>
     <li><a href="Screenshots.md">Screenshots</a></li>
@@ -17,8 +9,8 @@ This is my portfolio website, I made it using HTML, CSS and JavaScript, I still 
     <li><a href="https://armandogg24.github.io/portfolio/">Deployment</a></li>
 </ul>
 
-<div class="buttons">
+<div style="display: flex;justify-content: right;align-items: center;">
     <a href="Screenshots.md">
-        Next <span style="font-size: 36px;" class="material-icons">subdirectory_arrow_right</span>
+        Next 
     </a>
 </div>

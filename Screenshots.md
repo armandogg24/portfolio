@@ -1,12 +1,4 @@
 # Screenshots
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<style>
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-</style>
 <h2>Web</h2>
 <ul>
     <li>Landing Page:before
