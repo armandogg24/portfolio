@@ -11,6 +11,6 @@ This is my portfolio website, I made it using HTML, CSS and JavaScript, I still 
 
 <div style="display: flex;justify-content: right;align-items: center;">
     <a href="Screenshots.md">
-        Next 
+        Next<p style="font-size: 30px;">↪</p>
     </a>
 </div>

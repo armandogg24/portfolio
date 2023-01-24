@@ -54,9 +54,9 @@
 
 <div class="buttons">
     <a href="README.md">
-        <span style="font-size: 36px;" class="material-icons">subdirectory_arrow_left</span> Back
+        <p style="font-size: 30px;">↩</p>Back
     </a>
     <a href="CSS.md">
-        Next <span style="font-size: 36px;" class="material-icons">subdirectory_arrow_right</span>
+        Next<p style="font-size: 30px;">↪</p>
     </a>
 </div>
